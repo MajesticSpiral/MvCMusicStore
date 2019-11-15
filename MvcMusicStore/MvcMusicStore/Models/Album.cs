@@ -7,6 +7,7 @@ namespace MvcMusicStore.Models
 {
 	public class Album
 	{
+		[Key]
 		public int AlbumId { get; set; }
 		public int GenreId { get; set; }
 		public int ArtistId { get; set; }
@@ -15,5 +16,6 @@ namespace MvcMusicStore.Models
 		public string AlbumArtUrl { get; set; }
 		public Genre Genre { get; set; }
 		public Artist Artist { get; set; }
+		public List<Album> Albums { get; set; }
 	}
 }
