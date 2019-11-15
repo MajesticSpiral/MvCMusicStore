@@ -20,7 +20,7 @@ namespace MvcMusicStore.Models
 		[Range(0.01, 100.00,
 			ErrorMessage = "Price must be between 0.01 and 100.00")]
 		public decimal Price { get; set; }
-		[DisplayName("Album Art URL")]
+		[DisplayName("images/placeholder.gif")]
 		[StringLength(1024)]
 		public string AlbumArtUrl { get; set; }
 		public virtual Genre Genre { get; set; }
