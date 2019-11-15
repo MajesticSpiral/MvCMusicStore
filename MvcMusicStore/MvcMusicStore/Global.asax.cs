@@ -11,9 +11,12 @@ namespace MvcMusicStore
     {
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
+
+			System.Data.Entity.Database.SetInitializer(
+			new MvcMusicStore.Models.SampleData());
+			AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-			new MvcMusicStore.Models.SampleData();
+			
 		}
     }
 }
