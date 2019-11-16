@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using MvcMusicStore.Models;
 
 namespace MvcMusicStore.ViewModels
@@ -10,8 +7,8 @@ namespace MvcMusicStore.ViewModels
 	public class ShoppingCartViewModel
 	{
 		[Key]
-		public int CartId {get; set ;}
-		public List<Cart> CartItems { get; set; }
-	    public decimal CartTotal { get; set; }
+		public int cartId {get; set;}
+		 public List<Cart> CartItems { get; set; }
+		public decimal CartTotal { get; set; }
 	}
 }

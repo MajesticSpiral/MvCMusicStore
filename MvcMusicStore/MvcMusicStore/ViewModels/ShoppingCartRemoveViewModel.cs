@@ -5,7 +5,7 @@ using System.Web;
 
 
 
-namespace MvcMusicStore.ViewModels 
+namespace MvcMusicStore.ViewModels
 {
 	public class ShoppingCartRemoveViewModel
 	{
@@ -16,4 +16,3 @@ namespace MvcMusicStore.ViewModels
 		public int DeleteId { get; set; }
 	}
 }
-
